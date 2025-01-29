@@ -11,10 +11,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -51,7 +48,4 @@ I learn how to add interactivity to the websites using JavaScript.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mohammadshbeeb11)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
+- Frontend Mentor - [@mohammadshbeeb11](https://www.frontendmentor.io/profile/mohammadshbeeb11)
