@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+:root {
+    --body-background: hsl(47, 88%, 63%);
+    --card-background: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --font-size: 16px;
+    --fw-normal: 500;
+    --fw-bold: 800;
+    --font-family: Figtree, sans-serif;
+    --spacing-200: 1rem;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    background-color: var(--body-background);
+    line-height: 1.5;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card, .card-image, .card-badge {
+    border-radius: var(--spacing-200);
+}
+
+.card {
+    background-color: var(--card-background);
+    width: 320px;
+    padding: var(--spacing-200);
+    margin: var(--spacing-200);
+    box-shadow: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-950);
+}
+
+.card-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-badge {
+    background-color: var(--body-background);
+    color: var(--gray-950);
+    width: fit-content;
+    margin-block: var(--spacing-200);
+    padding: .5rem;
+    font-weight: var(--fw-bold);
+}
+
+.card-date {
+    margin-bottom: var(--spacing-200);
+    color: var(--gray-500);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--spacing-200);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.card-title:hover {
+    color: var(--body-background);
+}
+
+.card-description {
+    padding: .5rem;
+    color: var(--gray-500);
+    font-weight: var(--fw-normal);
+}
+
+.card-owner {
+    display: flex;
+    gap: var(--spacing-200);
+    align-items: center;
+    margin-top: var(--spacing-200);
+    font-weight: var(--fw-bold);
+}
+
+.card-profile-pic {
+    width: 30px;
+}
