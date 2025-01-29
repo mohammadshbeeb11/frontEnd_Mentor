@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --font-size: 18px;
+    --young-serif: 'Young Serif', serif;
+    --outfit: Outfit, serif;
+    --fw-young-serif: 400;
+    --fw-outfit-semibold: 400;
+    --fw-outfit-regular: 600;
+    --fw-outfit-bold: 700;
+}
+
+body {
+    font-family: var(--outfit);
+    min-height: 100vh;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stone-100);
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-family: var(--young-serif);
+    font-weight: var(--fw-young-serif);
+}
+
+h2, h3 {
+    color: var(--rose-800);
+}
+
+section {
+    padding: 1.5rem 0;
+}
+
+.bold {
+    font-weight: var(--fw-outfit-bold);
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+ul li, ol li {
+    margin-top: .5rem;
+    font-size: 0.8rem;
+    color: var(--stone-600);
+}
+
+/* Recipe Stylings */
+
+.recipe-main {
+    max-width: 30rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin: 3rem auto;
+}
+
+/* Recipe Intro Section Stylings */
+
+.recipe-image {
+    width: 100%;
+    display: block;
+}
+
+.recipe-main, .recipe-image {
+    border-radius: .5rem;
+}
+
+.recipe-title {
+    margin-block: 1rem;
+    font-size: 2rem;
+    text-wrap: wrap;
+}
+
+.recipe-description {
+    font-size: 0.75rem;
+    color: var(--stone-600);
+    font-weight: var(--fw-outfit-semibold);
+}
+
+/* Prep time Section Stylings */
+
+.prep-time {
+    background-color: var(--rose-50);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.prep-time .section-title {
+    font-size: 1rem;
+    font-family: var(--outfit);
+    font-weight: var(--fw-outfit-bold);
+    margin-bottom: 1rem;
+}
+
+.prep-time-list li {
+    font-weight: var(--fw-outfit-semibold);
+}
+
+/* Ingredients Section Stylings */
+
+.ingredients, .instructions {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.ingredients-list {
+    margin-top: 1.5rem;
+}
+
+/* Nutrition Section Stylings */
+
+.nutrition-description {
+    color: var(--stone-600);
+    margin-block: 1rem;
+}
+
+.nutrition-table {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nutrition-table > div {
+    flex: 1;
+}
+
+.nutrition-table > div > div {
+    border-bottom: 1px solid var(--stone-150);
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: var(--fw-outfit-regular);
+}
+
+.nutrition-table > div > div:last-child {
+    border: none;
+}
+
+.nutrition-table .row {
+    color: var(--rose-800);
+}
+
+.nutrition-table .header {
+    color: var(--stone-600);
+}
