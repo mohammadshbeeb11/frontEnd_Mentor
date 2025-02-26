@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --poppins: "Poppins";
+    --Open-sans: "Open Sans";
+    --fw-normal: 400;
+    --fw-bold: 600;
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background: var(--violet) url('./images/bg-desktop.svg') no-repeat center/cover;
+    overflow-x: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+.logo {
+    width: 200px;
+    padding: 2rem 0;
+}
+
+.hero {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.content {
+    margin: 1rem;
+    color: #fff;
+}
+
+.title {
+    font-family: var(--poppins);
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.description,
+.cta-button {
+    font-family: var(--Open-sans);
+    font-weight: var(--fw-normal);
+    font-size: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--violet);
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-block: 2rem;
+    box-shadow: 0 0 10px rgba(0 0 0 / .5);
+    cursor: pointer;
+    font-weight: var(--fw-normal);
+    transition: all .3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.icon-link {
+    color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1px solid;
+    transition: all .3s ease;
+}
+
+.icon-link:hover {
+    color: var(--soft-magenta);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url('./images/bg-mobile.svg');
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .logo {
+        width: 120px;
+        padding: 1rem 0;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
